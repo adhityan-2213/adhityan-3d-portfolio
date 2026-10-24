@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#070b14" />
+<meta name="description" content="Adhityan C — Cyber Forensics, AI Automation and Full-Stack Development portfolio." />
+<title>Adhityan C | Cyber • AI • Full Stack</title>
+<style>
+:root{--bg:#070b14;--panel:rgba(14,23,39,.76);--text:#eef5ff;--muted:#9cacc3;--blue:#50c8ff;--cyan:#83f0ff;--line:rgba(110,203,255,.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 15%,#10294b 0,transparent 34%),radial-gradient(ellipse at 15% 60%,#0b2034 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(80,200,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(80,200,255,.12) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 85%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--blue)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:8px}
+.hero{min-height:calc(100vh - 78px);display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:62px 0 80px}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--line);background:rgba(30,72,105,.22);padding:9px 13px;border-radius:99px;color:#a9eaff;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;background:#5df6c4;border-radius:50%;box-shadow:0 0 13px #5df6c4}h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.99;letter-spacing:-.065em;margin:24px 0 18px}h1 span{display:block;background:linear-gradient(100deg,#fff 15%,#8edfff 65%,#5b8dff);-webkit-background-clip:text;background-clip:text;color:transparent}.role{font-size:clamp(1.05rem,2vw,1.35rem);color:#c6d8ed;margin:0 0 18px}.intro{max-width:600px;color:var(--muted);font-size:1.02rem;line-height:1.8}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 19px;border-radius:11px;font-weight:700;font-size:.92rem;border:1px solid var(--line);transition:.25s;display:inline-flex;align-items:center;gap:9px}.btn.primary{background:linear-gradient(110deg,#47bfff,#567bff);color:#03101c;border:0;box-shadow:0 10px 34px #298fff2e}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px #38baff28}.status{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#9eb1c9;font-size:.82rem}.status span:before{content:"✦";color:var(--blue);margin-right:7px}
+.scene{position:relative;perspective:1000px;min-height:500px;display:grid;place-items:center}.orbit{position:absolute;width:390px;height:390px;border:1px solid rgba(80,200,255,.25);border-radius:50%;transform:rotateX(67deg) rotateZ(-20deg);animation:orbit 18s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(80,200,255,.18);border-radius:50%;inset:25px}.orbit:after{inset:-28px}.halo{position:absolute;width:340px;height:420px;border-radius:50%;background:radial-gradient(ellipse,rgba(39,157,255,.23),transparent 68%);filter:blur(13px);animation:pulse 4s ease-in-out infinite}.portrait-card{position:relative;width:min(330px,78vw);height:420px;border-radius:26px;overflow:hidden;border:1px solid rgba(143,225,255,.38);background:linear-gradient(145deg,#183552,#080e19 65%);box-shadow:0 30px 90px #0009,0 0 45px #28aaff20;transform-style:preserve-3d;transition:transform .16s ease-out}.portrait-card:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 52%,rgba(5,11,21,.93) 100%),linear-gradient(115deg,rgba(72,201,255,.13),transparent 35%);pointer-events:none}.portrait-card img{width:100%;height:100%;object-fit:cover;object-position:center 18%;filter:contrast(1.04) saturate(.9)}.scan{position:absolute;z-index:2;left:0;right:0;height:2px;top:20%;background:linear-gradient(90deg,transparent,#72eaff,transparent);box-shadow:0 0 14px #56d5ff;opacity:.7;animation:scan 5s ease-in-out infinite}.card-caption{position:absolute;z-index:3;bottom:20px;left:20px;right:20px;transform:translateZ(35px)}.card-caption small{color:var(--cyan);letter-spacing:.2em;font-size:.67rem}.card-caption h3{margin:7px 0 4px;font-size:1.5rem}.card-caption p{margin:0;color:#b5c5d9;font-size:.83rem}.float-tag{position:absolute;z-index:4;background:rgba(7,16,30,.86);border:1px solid var(--line);backdrop-filter:blur(12px);padding:12px 14px;border-radius:13px;font-size:.8rem;box-shadow:0 12px 35px #0005;animation:float 5s ease-in-out infinite}.float-tag b{display:block;color:var(--cyan);font-size:.75rem;margin-bottom:4px}.tag-one{top:75px;left:-8px}.tag-two{right:-12px;bottom:95px;animation-delay:-2.5s}.ring{position:absolute;width:440px;height:440px;border:1px dashed rgba(95,206,255,.22);border-radius:50%;animation:orbit 30s linear infinite reverse}
+section{padding:84px 0}.section-label{color:var(--blue);letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;font-weight:800}.section-title{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.045em;margin:12px 0 14px}.section-copy{color:var(--muted);line-height:1.8;max-width:680px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}.panel{background:var(--panel);border:1px solid rgba(133,200,255,.15);border-radius:18px;padding:24px;backdrop-filter:blur(14px);transition:.25s}.panel:hover{transform:translateY(-5px);border-color:rgba(80,200,255,.5);box-shadow:0 18px 42px #0003}.icon{font-size:1.55rem}.panel h3{margin:14px 0 9px}.panel p{color:var(--muted);line-height:1.7;font-size:.92rem;margin:0}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);color:#ccefff;background:#0b1b2c;padding:9px 12px;border-radius:9px;font-size:.85rem}.project{min-height:220px;display:flex;flex-direction:column}.project .mini{font-size:.72rem;color:var(--cyan);letter-spacing:.14em;text-transform:uppercase}.project h3{font-size:1.25rem}.project p{flex:1}.project a{margin-top:18px;color:var(--cyan);font-weight:700;font-size:.9rem}.contact-box{padding:clamp(26px,5vw,52px);border:1px solid var(--line);border-radius:24px;background:radial-gradient(ellipse at 100% 0%,#17436a70,transparent 50%),var(--panel);display:flex;justify-content:space-between;align-items:center;gap:25px}.contact-box h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:8px 0}.contact-box p{color:var(--muted);line-height:1.7;max-width:560px}.footer{border-top:1px solid rgba(255,255,255,.08);padding:25px 0;color:#8395ac;font-size:.82rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes orbit{to{transform:rotateX(67deg) rotateZ(340deg)}}@keyframes pulse{50%{opacity:.55;transform:scale(1.08)}}@keyframes scan{0%,100%{top:15%;opacity:0}15%,75%{opacity:.75}85%{top:80%;opacity:0}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@media(max-width:800px){.navlinks{display:none;position:absolute;top:70px;left:4%;right:4%;padding:18px;background:#0b1422;border:1px solid var(--line);border-radius:12px;flex-direction:column;z-index:10}.navlinks.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:48px;gap:12px}.scene{min-height:470px}.tag-one{left:0}.tag-two{right:0}.grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}.ring{width:360px;height:360px}.orbit{width:320px;height:320px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">ADHITYAN<span>.DEV</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><i class="dot"></i> Cybersecurity · AI · Development</div>
+    <h1>Building a <span>safer digital</span> world.</h1>
+    <p class="role">Hi, I'm <strong>Adhityan C</strong> — Cyber Forensics & AI Developer.</p>
+    <p class="intro">I build practical digital-forensics tools and web applications, bringing together Python, full-stack development, AI automation, and a security-first mindset.</p>
+    <div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="#contact">Let's connect →</a></div>
+    <div class="status"><span>Digital & Cyber Forensics</span><span>AI Automation</span><span>Full-Stack Development</span></div>
+  </div>
+  <div class="scene" id="scene" aria-label="Interactive portrait card">
+    <div class="ring"></div><div class="orbit"></div><div class="halo"></div>
+    <div class="portrait-card" id="portraitCard">
+      <img src="assets/profile.png" alt="Portrait of Adhityan C" />
+      <div class="scan"></div>
+      <div class="card-caption"><small>IDENTITY / DEVELOPER</small><h3>Adhityan C</h3><p>Investigate. Automate. Build.</p></div>
+    </div>
+    <div class="float-tag tag-one"><b>01 / FORENSICS</b>Evidence-led analysis</div>
+    <div class="float-tag tag-two"><b>02 / AI SYSTEMS</b>Smart automation</div>
+  </div>
+</section>
+<section class="wrap reveal" id="about">
+  <div class="section-label">01 — About me</div><h2 class="section-title">Curious by nature. Security by design.</h2>
+  <p class="section-copy">I'm a Digital and Cyber Forensics student interested in investigating digital evidence, detecting suspicious activity, and creating useful software. My approach combines analytical thinking with hands-on development—from parsing logs to building full-stack interfaces.</p>
+  <div class="grid">
+    <article class="panel"><div class="icon">⌕</div><h3>Digital Forensics</h3><p>Log investigation, suspicious-event identification, and structured analysis to support digital investigations.</p></article>
+    <article class="panel"><div class="icon">✧</div><h3>AI & Automation</h3><p>Exploring practical AI-assisted workflows and automation to reduce repetitive work and surface useful insights.</p></article>
+    <article class="panel"><div class="icon">⌘</div><h3>Full-Stack Development</h3><p>Building responsive user experiences and REST APIs with a focus on usability, validation, and maintainable code.</p></article>
+  </div>
+</section>
+<section class="wrap reveal" id="skills">
+  <div class="section-label">02 — Toolkit</div><h2 class="section-title">Tools I work with</h2><p class="section-copy">A growing toolkit across software development, data, AI, and cybersecurity.</p>
+  <div class="chips"><span class="chip">Python</span><span class="chip">Django REST Framework</span><span class="chip">React</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span><span class="chip">PostgreSQL</span><span class="chip">REST APIs</span><span class="chip">Git & GitHub</span><span class="chip">AI Automation</span><span class="chip">Log Analysis</span><span class="chip">Digital Forensics</span><span class="chip">Cybersecurity</span><span class="chip">HTML & CSS</span></div>
+</section>
+<section class="wrap reveal" id="projects">
+  <div class="section-label">03 — Selected work</div><h2 class="section-title">Projects with a purpose.</h2><p class="section-copy">A selection of work focused on security investigations and useful software experiences.</p>
+  <div class="grid">
+    <article class="panel project"><div class="mini">Cyber Forensics · AI</div><h3>ForensiShield AI</h3><p>A cyber-forensics platform concept for uploading log files, identifying failed-login patterns, reviewing analysis results, and generating PDF investigation reports.</p><a href="#contact">Discuss this project ↗</a></article>
+    <article class="panel project"><div class="mini">Python · Security</div><h3>Threat Intelligence Collector</h3><p>A desktop-tool concept for extracting indicators of compromise from text, scoring potential threats, and producing structured reports.</p><a href="#contact">Discuss this project ↗</a></article>
+    <article class="panel project"><div class="mini">Web · Full Stack</div><h3>Full-Stack Web Applications</h3><p>Responsive web interfaces and backend APIs with validation, database integration, and clear user flows.</p><a href="#contact">Discuss this project ↗</a></article>
+  </div>
+  <p style="color:#8195ad;font-size:.8rem;margin-top:18px">Note: Add verified repository links and project-specific technical details before publishing.</p>
+</section>
+<section class="wrap reveal" id="contact">
+  <div class="contact-box"><div><div class="section-label">04 — Contact</div><h2>Have an opportunity in mind?</h2><p>I'm open to connecting about entry-level opportunities, internships, and projects across cyber forensics, AI automation, and full-stack development.</p><p>✉ <a href="mailto:adhityaneswari@gmail.com" style="color:var(--cyan)">adhityaneswari@gmail.com</a></p></div><a class="btn primary" href="mailto:adhityaneswari@gmail.com?subject=Portfolio%20Contact">Email me ↗</a></div>
+</section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Adhityan C</span><span>Designed with a security-first mindset · Built for the web</span></footer>
+<script>
+const card=document.getElementById('portraitCard'),scene=document.getElementById('scene');
+if(window.matchMedia('(pointer:fine)').matches){scene.addEventListener('mousemove',e=>{const r=scene.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*13}deg) rotateX(${-y*11}deg) translateZ(8px)`});scene.addEventListener('mouseleave',()=>card.style.transform='rotateY(0) rotateX(0)')}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('menu').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
